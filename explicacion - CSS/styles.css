@@ -1,0 +1,63 @@
+/*este es un selector universal*/
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /*color:midnightblue ;*/
+}
+body{
+    background-color: rgb(155, 208, 229);
+}
+/*esto le pone color a las letritas*/
+h2{
+    color: snow;
+    background-color:midnightblue;
+    /*  background-color:coral; 
+    esto le pone un fondo a las letras*/
+}
+
+/*selectores de id y de clase*/
+#navIndex{
+    background-color: slateblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:darkblue;
+}
+
+.views{
+    color:orchid;
+}
+
+/*selectores de atributos
+usados mas que todo para formularios */
+
+input[ type = "text"]{
+    padding: 10px;
+}
+
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+}
+
+/*selectores hijo*/
+
+
+#navIndex > li > a{
+    color: red;
+}
+
+.card #title{
+    font-size: 40px; /*tamanio de las letras*/
+    font-family: Helvetica; /*estilo de las letras*/
+    font-style: italic; /**/
+    line-height: 70px; /*espacio entre lineas*/
+    letter-spacing: 5px; /*espacio entre letras*/
+    text-decoration: underline; /*subrayado*/
+    text-transform: capitalize; /*para mayusculas y minusculas*/
+    text-align: center;/*alinear nuetro texto al lado de preferencia*/
+
+}
+
+p{
+    font-weight: bold;
+}
+
