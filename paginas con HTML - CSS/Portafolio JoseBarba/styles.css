@@ -1,0 +1,260 @@
+@font-face{
+    font-family:Oxygen;
+    src: url(../../Fonts/Oxygen-Light.ttf);
+}
+
+@font-face {
+    font-family:Sevillana ;
+    src: url(../../Fonts/Sevillana-Regular.ttf);
+} 
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #f1f1f1;
+    font-family: 'Oxygen';
+}
+
+#navbar{
+    width: 100%;
+    height: fit-content;
+    background-color: #FAFAFA;
+    box-shadow: 0 0 5px 0 #cccc;
+    position: fixed; /*para que el nav se quede o persiga xd*/
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    padding: 20px;
+    padding-right: 60px;
+    border: 1px solid #cdcdcd;
+}
+
+#navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#principal-contenido{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto;
+    background-color: white;
+    padding-top: 50px;
+}
+
+#principal-contenido .saludo{
+    display: flex;
+}
+
+#principal-contenido .saludo h1{
+    flex-grow: 1;
+    align-self: center;
+    padding-left: 50px;
+    font-family: 'Oxygen';
+    font-size: 42px;
+    text-shadow: -5px 2px 5px #cccc;/*para que tenga un efecto de sombrita*/
+}
+
+#principal-contenido .saludo img{
+    flex-grow: 1;/*para que ocupe la mitad de la pantalla*/
+    width: 50%;
+}
+
+#enlace-proyectos{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#enlace-proyectos a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 7px;
+    box-shadow: -3px 2px 10px rgba(143, 140, 140, 0.8);
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#about h2{
+    font-family: 'Oxygen';
+    font-size: 45px;
+    text-shadow: -5px 2px 5px #cccc;
+}
+
+#about-presentacion{
+    width: 55%;
+    display: flex;
+    margin: 0% auto;
+    border: 1px solid #cccccc;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: -10px 5px 10px  rgba(143, 140, 140, 0.8);
+}
+
+#about-presentacion img{
+    width: 50%;
+}
+
+#about-presentacion p{
+    align-self: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lenguajes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.lenguajes i{
+    transition: all 0.8s;
+}
+
+.lenguajes i:nth-child(1):hover{
+    color: orange;
+}
+
+.lenguajes i:nth-child(2):hover{
+    color:rgb(84, 84, 185);
+}
+
+.lenguajes i:nth-child(3):hover{
+    color:yellow;
+}
+
+.lenguajes i:nth-child(4):hover{
+    color: orange;
+}
+
+.lenguajes i:nth-child(5):hover{
+    color:green;
+}
+
+.lenguajes i:nth-child(6):hover{
+    color:rgb(231, 131, 148);
+}
+
+#proyectos h2{
+    margin-bottom: 50px;
+}
+
+.proyecto{
+    width: 50%;
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid #cccccc;
+    margin-bottom:50 px;
+    padding: 30px;
+}
+
+.proyecto h3{
+    font-family: 'Oxygen';
+    font-size: 24px;
+    text-shadow: -5px 2px 5px #b6adad;
+    margin-bottom: 20px;
+}
+
+.proyecto_flex{
+    display: flex;
+}
+
+.proyecto_flex .proyecto_img img{
+    width: 125px;
+    height: 125px;
+    border-radius: 999px;
+    flex-grow: 5;
+}
+
+.proyecto-descripcion{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%; /*para que se vaya a un costado*/
+    align-self: center;
+    font-size: 18px;
+}
+
+.proyecto-descripcion i:nth-child(1){
+    color: orange;
+}
+
+.proyecto-descripcion i:nth-child(2){
+    color:rgb(84, 84, 185);
+}
+
+.proyecto-descripcion i:nth-child(3){
+    color:yellow;
+}
+
+.proyecto-codigo{
+    margin-top: 20px;
+}
+
+.proyecto-codigo a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 7px;
+}
+
+footer{
+    background-color: black;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+footer form h3{
+    color: white;
+    font-family: 'Oxygen';
+    font-size: 30px;
+    text-align: center;
+}
+
+footer form input[type="text"], input[type="email"]{
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+footer form input[type="submit"]{
+    width: 100px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+#social-media{
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#social-media i{
+    color: white;
+}

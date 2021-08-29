@@ -1,0 +1,18 @@
+.libre{
+    width: 70px;
+    height: 70px;
+    background-color: green;
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}
+
+.libre2{
+    background-color: red;
+    top: 680px;
+    z-index: 1;
+}
+
+.libre1{
+    z-index: 2;/*para mostrar primero si es que se sobreponen*/
+}

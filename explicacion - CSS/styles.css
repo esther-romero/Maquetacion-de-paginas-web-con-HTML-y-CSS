@@ -1,7 +1,7 @@
 /*este es un selector universal*/
 *{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    /*color:midnightblue ;*/
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:midnightblue ;*/
 }
 body{
     background-color: rgb(155, 208, 229);
@@ -17,7 +17,7 @@ h2{
 /*selectores de id y de clase*/
 #navIndex{
     background-color: slateblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
     color:darkblue;
 }
 
@@ -61,3 +61,31 @@ p{
     font-weight: bold;
 }
 
+
+
+/*otro tipo de letras personalizadas de google fonts*/
+/*colocar al principio del css como buena practica*/
+@font-face {
+    font-family: Sevillana;
+    src: url( /Fonts/Sevillana-Regular.ttf );
+}
+
+body{
+    font-family: 'Sevillana', sans-serif;
+    background-image: url(/Imagenes/bananas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;/*para mantener la imagen estatica y el contenido sigue bajando*/
+    /*background: linear-gradient(135deg, red, blue); para ir degradando un color de izquierda a derecha*/
+}
+/*colocar al principio del css como buena practica*/
+
+
+
+/*se puede aniadir colores mediante su nombre, hexadecimal, rgb,rgba*/
+
+
+/*Fondos
+-buscar patrones background, descargar y usar xd
+background-image: url(/Imagenes/bananas.jpg);
+*/
